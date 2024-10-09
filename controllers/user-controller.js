@@ -325,7 +325,7 @@ class UserController {
         try {
             const responce = await userService.setTaskapi20(req.body[0], req.params.taskarrow)
 
-            return '200'
+            return res.json(responce);
         } catch(e) {
             next(e)
         }
