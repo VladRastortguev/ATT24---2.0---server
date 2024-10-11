@@ -15,9 +15,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 const allowedOrigins = [
-    'http://localhost:3000',  // ваш локальный адрес
-    'https://www.kia-bishkek.kg', // первый разрешенный домен
-    'https://another-domain.com'  // второй разрешенный домен
+    'https:att24.altyntulpar.kg',  // ваш локальный адрес
+    'https://www.kia-bishkek.kg' // первый разрешенный домен
 ];
 
 app.use(cors({
