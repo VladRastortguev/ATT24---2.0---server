@@ -21,7 +21,7 @@ const alltaskmodel = require('../newapiModels/alltask-model');
 
 class UserSevice {
     async registration(email, password) {
-        const candidate = await UserModel.findOne( {email} );
+        const candidate = await UserModel.findOne( {email} );   
 
         if (candidate) {
             throw ApiError.BadRequest(`Пользователь с почтовым адресом ${email} уже существует`);
@@ -148,9 +148,9 @@ class UserSevice {
     }
 
     async getItilUser() {
-        const agent = new https.Agent({
-            rejectUnauthorized: false
-        })        
+        // const agent = new https.Agent({
+        //     rejectUnauthorized: false
+        // })        
 
         try {
             const itiluser = await axios.get(`${process.env.API_ITIL}/users`, {
