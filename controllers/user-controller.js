@@ -29,6 +29,7 @@ class UserController {
                 'altyntulpar.com',
                 'toyota-royalmotors.uz',
                 'ducati.uz',
+                'ducati.kg',
                 'byd-rm.uz',
                 'royalmotors.uz',
                 'chevrolet-auto.kg'
